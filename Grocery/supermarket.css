@@ -1,0 +1,289 @@
+body{
+	background-color:white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+form {border: 3px solid #f1f1f1;}
+
+* {
+  box-sizing: border-box;
+}
+
+h2.ttl{
+	font-family:tahoma;
+	color:white;
+	font-weight:normal;
+	font-style:italic;
+	text-decoration:none;
+}
+h2.gnr{
+	font-family:tahoma;
+	color:black;
+	font-weight:normal;
+	font-style:italic;
+	text-decoration:none;
+}
+h3.itmcat{
+	font-family:tahoma;
+	color:white;
+	font-weight:normal;
+}
+.topbar{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:#000;
+}
+a.topopt1{
+	float:left;
+	margin-right:10px;
+	margin-left:10px;
+	text-decoration:none;
+}
+a.topopt2{
+	float:right;
+	margin-left:10px;
+	margin-right:10px;
+	text-decoration:none;
+}
+input.sch{
+	width:300px;
+	height:25px;
+	margin-top:22px;
+}
+button.topbtn{
+	background-color:#000;
+	border-color:white;
+	border-width:medium;
+	color:white;
+	font-size:20px;
+	margin-top:20px;
+}
+button:hover {
+	border-color:red;
+}
+.dropdown {
+	float: right;
+	margin-left:10px;
+	margin-right:10px;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;
+	outline: none;
+	color: white;
+	background-color: inherit;
+	font-family: tahoma;
+	font-size: 20px;
+	margin-top: 20px;
+	background-color:#000;
+	border-color:white;
+	border-width:medium;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+	border-color:red;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.view{
+	display:block;
+}
+
+.column {
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.card {
+	box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.19);
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+	font-family: tahoma;
+}
+
+.price {
+	color: grey;
+	font-size: 22px;
+}
+
+.card button {
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+.card button:hover {
+	opacity: 0.7;
+}
+
+/*Slideshow
+*/
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+	box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.19);
+	max-width: 700px;
+	position: relative;
+	margin: auto;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+	.prev, .next,.text {font-size: 11px}
+}
+
+.container {
+  padding: 16px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 10%;
+  border-radius: 10%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 25%
+  padding: 15px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+
+
